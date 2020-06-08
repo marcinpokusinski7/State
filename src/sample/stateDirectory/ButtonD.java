@@ -13,9 +13,25 @@ public class ButtonD extends State{
     }
 
     @Override
-    public String move() {
+    public String goForward() {
         return null;
     }
+
+    @Override
+    public String goBackward() {
+        return null;
+    }
+
+    @Override
+    public String goLeft() {
+        return null;
+    }
+
+    @Override
+    public String goRight() {
+        return null;
+    }
+
 
 
 }

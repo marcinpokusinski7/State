@@ -15,8 +15,17 @@ public class Controller {
 
    public void initialize(){
         btna.setOnAction(actionEvent -> {
-            output.setText(mechanics.getState().move());
+            output.setText(mechanics.getState().goLeft());
         });
+       btnw.setOnAction(actionEvent -> {
+           output.setText(mechanics.getState().goLeft());
+       });
+       btns.setOnAction(actionEvent -> {
+           output.setText(mechanics.getState().goLeft());
+       });
+       btnd.setOnAction(actionEvent -> {
+           output.setText(mechanics.getState().goLeft());
+       });
 
 
 

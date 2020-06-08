@@ -9,6 +9,8 @@ public abstract class State {
        this.mechanics = mechanics;
     }
 
-    public abstract String move();
-
+    public abstract String goForward();
+    public abstract String goBackward();
+    public abstract String goLeft();
+    public abstract String goRight();
 }

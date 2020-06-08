@@ -13,16 +13,32 @@ public class ButtonA extends State {
     }
 
     @Override
-    public String move() {
+    public String goForward() {
+        return null;
+    }
+
+    @Override
+    public String goBackward() {
+        return null;
+    }
+
+    @Override
+    public String goLeft() {
         if(mechanics.isMoving()){
-            mechanics.changeState();
+
             return "jade w lewo";
 
         }else {
-
+            mechanics.changeState(new ButtonD(mechanics));
             return "stoi w miejscu";
         }
     }
+
+    @Override
+    public String goRight() {
+        return null;
+    }
+
 
 
 }
